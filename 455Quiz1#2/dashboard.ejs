@@ -1,0 +1,35 @@
+<html>
+
+<body bgcolor="lightgreen">
+    <h1>
+      Welcome to your Private Journal ,<%= username %>
+    </h1>
+    <br>
+  ``<h2>
+      Here is your previous journal Entry ,
+    <br>
+    <br>
+      <%= journal %>
+    </h2>
+    <br>
+    <h3>
+  Enter Your new Journal Entry here,
+    </h3>
+  <br>
+  <form name="form1" method="POST" action="/update">
+      <table>
+          <textarea rows="10" cols="50" name="journal"></textarea>
+          <td colspan="2"><input type="submit" value="Update" ></td>
+          </tr>
+      </table>
+  </form>
+  <br>
+  <a href='http://localhost:3000/logout'>
+  <button>Logout Now!</button></a><br><br>
+
+
+
+
+
+</body>
+</html>
