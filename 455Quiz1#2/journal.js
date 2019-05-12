@@ -100,7 +100,7 @@ app.get('/dashboard',function(req,res){
              console.log(qResult[1]);
              qResult[1].forEach(function(account){
              journal=account['journal'];
-
+            journal = journal.replace(/\n/g, '<br>');
               match = true;
 
            });
